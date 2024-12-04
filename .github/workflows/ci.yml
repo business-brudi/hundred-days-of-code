@@ -1,4 +1,4 @@
-name: ci
+name: ci-rest-api
 
 on:
   push:
@@ -16,7 +16,9 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
-    - name: Build
+    - name: navigate to rest-api
+      run: cd rest-api
+    - name: build rest-api
       run: cargo build --verbose
-    - name: Run tests
+    - name: run rest-api tests
       run: cargo test --verbose
