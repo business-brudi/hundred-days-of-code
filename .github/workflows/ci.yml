@@ -16,9 +16,9 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
-    - name: navigate to rest-api
-      run: cd rest-api
+    - name: check rest-api
+      run: cd rest-api && cargo check
     - name: build rest-api
-      run: cargo build --verbose
+      run: cd rest-api && cargo build --verbose
     - name: run rest-api tests
-      run: cargo test --verbose
+      run: cd rest-api && cargo test --verbose
