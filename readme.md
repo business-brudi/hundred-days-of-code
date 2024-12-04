@@ -1,5 +1,9 @@
 # rust
 
+## code format
+
+`rustfmt ./**/*.rs`
+
 ## cargo
 
 ### build
