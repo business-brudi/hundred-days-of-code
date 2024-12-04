@@ -1,4 +1,4 @@
-name: ci-rest-api
+name: ci-rest_api
 
 on:
   push:
