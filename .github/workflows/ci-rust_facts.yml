@@ -1,0 +1,24 @@
+name: ci-rust_facts
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+env:
+  CARGO_TERM_COLOR: always
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: check rust_facts
+      run: cd rest-api && cargo check
+    - name: build rust_facts
+      run: cd rust_facts && cargo build --verbose
+    - name: run rest-api tests
+      run: cd rust_facts && cargo test --verbose
