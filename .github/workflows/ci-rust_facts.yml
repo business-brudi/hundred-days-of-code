@@ -19,6 +19,6 @@ jobs:
     - name: check rust_facts
       run: cd rest-api && cargo check
     - name: build rust_facts
-      run: cd rust_facts && cargo build --verbose
-    - name: run rest-api tests
-      run: cd rust_facts && cargo test --verbose
+      run: cd rust_facts && cargo build
+    - name: run rust_facts tests
+      run: cd rust_facts && cargo test
