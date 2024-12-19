@@ -17,8 +17,8 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: check
-      run: cd prototype/api && cargo check
+      run: cd prototype/prototype_api && cargo check
     - name: build
-      run: cd prototype/api && cargo build
+      run: cd prototype/prototype_api && cargo build
     - name: test
-      run: cd prototype/api && cargo test
+      run: cd prototype/prototype_api && cargo test

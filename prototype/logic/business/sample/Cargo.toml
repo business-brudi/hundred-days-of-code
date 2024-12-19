@@ -8,4 +8,4 @@ name = "sample"
 crate-type = ["lib"]
 
 [dependencies]
-sample-contract = { path = "../sample_contract" }
+sample_contract = { path = "../sample_contract" }
