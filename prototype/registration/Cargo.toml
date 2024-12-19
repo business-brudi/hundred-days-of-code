@@ -1,0 +1,12 @@
+[package]
+name = "registration"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "registration"
+crate-type = ["lib"]
+
+[dependencies]
+sample = { path = "../logic/business/sample" }
+sample_contract = { path = "../logic/business/sample_contract" }

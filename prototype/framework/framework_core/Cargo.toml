@@ -1,0 +1,11 @@
+[package]
+name = "framework_core"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "framework_core"
+crate-type = ["lib"]
+
+[dependencies]
+framework_contract = { path = "../framework_contract" }

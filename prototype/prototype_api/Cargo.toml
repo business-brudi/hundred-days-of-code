@@ -1,0 +1,12 @@
+[package]
+name = "prototype_api"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "app"
+path = "src/main.rs"
+
+[dependencies]
+registration = { path = "../registration" }
+sample_contract = { path = "../logic/business/sample_contract" }

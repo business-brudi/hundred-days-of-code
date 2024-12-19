@@ -1,0 +1,10 @@
+[package]
+name = "framework_contract"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "framework_contract"
+crate-type = ["lib"]
+
+[dependencies]
