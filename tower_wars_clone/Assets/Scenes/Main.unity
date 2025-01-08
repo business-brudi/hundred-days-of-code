@@ -389,8 +389,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2075898879}
   - component: {fileID: 2075898878}
+  - component: {fileID: 2075898880}
   m_Layer: 0
-  m_Name: Grid
+  m_Name: BoardManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -424,6 +425,26 @@ Transform:
   - {fileID: 1085002451}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2075898880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2075898877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0aa44c0a31b776f4086d4c019c3bd910, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Width: 8
+  Height: 8
+  GroundTiles:
+  - {fileID: 11400000, guid: 6df4e4d0abcf4f34e8218f223338b6ca, type: 2}
+  - {fileID: 11400000, guid: 56203837c39765b47bb0a1ed7804eb7f, type: 2}
+  WallTiles:
+  - {fileID: 11400000, guid: 67e05debbea2fc642b47ea099bfa590e, type: 2}
+  - {fileID: 11400000, guid: c4b527a8e6b20a14cba1387122c4198e, type: 2}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
